@@ -1,7 +1,7 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
+padding: 0;
+margin: 0;
+ }
 
 @font-face {
     font-family: 'peoplebook';
@@ -16,23 +16,56 @@
     src: url('../static/fonts/Gameplay.ttf');
 }
 
+
+@-webkit-keyframes glowing-text {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2e00e6, 0 0 40px #6300e6, 0 0 50px #c300e6, 0 0 60px #e200e6, 0 0 70px #e600ca;
+}
+  
+  100% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+nav { 
+    font-family: gameover;
+
+    position: sticky;
+    top: 10px;
+
+    background-color: #1d2021af;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin: 0rem 3rem 3rem 3rem;
+    padding: 2rem;
+}
+
 body {
-  font-family: 'peoplebook';
+  font-family: "monospace" ;
   background-image: url("../static/endless-constellation.png");
 }
 
+
 .banner-container {
+    font-family: 'peoplebook';
     display: flex;
+    flex-direction: column;
     justify-content:center;
     align-items: center;
     align-content: center;
-    flex-direction: row;
-    background-color: #110319;
+    background-color: #1103190f;
+}
+
+.banner-container h1{
+    font-size: 10rem;
 }
 
 .banner-container img {
-    height: 125px;
-    width: 125px;
+    height: 250px;
+    width: 250px;
 }
 
 h1 {
@@ -71,12 +104,8 @@ h2 {
   -moz-animation: glowing-text 1s ease-in-out infinite alternate;
   animation: glowing-text 1s ease-in-out infinite alternate;
 }
-@-webkit-keyframes glowing-text {
-  0% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2e00e6, 0 0 40px #6300e6, 0 0 50px #c300e6, 0 0 60px #e200e6, 0 0 70px #e600ca;
-}
-  
-  100% {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
+
+
+div {
+    height: 100vh;
 }
