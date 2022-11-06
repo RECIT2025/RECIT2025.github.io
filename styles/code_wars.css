@@ -15,16 +15,9 @@ margin: 0;
     font-family: 'gameover';
     src: url('../static/fonts/Gameplay.ttf');
 }
-
-
-@-webkit-keyframes glowing-text {
-  0% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2e00e6, 0 0 40px #6300e6, 0 0 50px #c300e6, 0 0 60px #e200e6, 0 0 70px #e600ca;
-}
-  
-  100% {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
+@font-face{
+    font-family: 'kgb';
+    src: url('../static/fonts/KGBlankSpaceSketch.ttf');
 }
 
 nav { 
@@ -40,8 +33,9 @@ nav {
     justify-content: space-evenly;
 
     margin: 0rem 3rem 3rem 3rem;
-    padding: 2rem;
+    padding: 1rem;
 }
+
 
 body {
   font-family: "monospace" ;
@@ -49,27 +43,48 @@ body {
 }
 
 
+a {
+    color: #8839ef;
+}
+
+a:hover {
+    color: #aaf;
+    animation: glowing-text 1s infinite alternate;
+    -webkit-animation: glowing-text 1s  infinite alternate;
+    -moz-animation: glowing-text 1s infinite alternate;
+}
+
 .banner-container {
     font-family: 'peoplebook';
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    align-content: center;
+    justify-content: center;
+    align-items:center;
     background-color: #1103190f;
 }
 
 .banner-container h1{
     font-size: 10rem;
 }
+.banner-container .designsummit{
+    font-family: "kgb";
+    font-size: 3rem;
+    color: #fff; 
+}
+span.c{
+    font-size: 10rem;
+}
 
 .banner-container img {
     height: 250px;
     width: 250px;
+    position:relative;
+    left: 50%;
+    top: 28%;
 }
 
 h1 {
-    color: #eabb3d;
+    color: #eabb3daa;
     font-size: 4rem;
     padding: 2rem;
     margin-left: 2rem;
@@ -79,8 +94,9 @@ h1 {
 main {
     font-family: 'gameover';
     color: #ccd0da;
-    font-size: 1.3rem;
-    margin: 2rem;
+    font-size: 2rem;
+    margin: 2vw;
+    padding: 2vw;
 }
 
 main p,li{
@@ -105,7 +121,17 @@ h2 {
   animation: glowing-text 1s ease-in-out infinite alternate;
 }
 
+@-webkit-keyframes glowing-text {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2e00e6, 0 0 40px #6300e6, 0 0 50px #c300e6, 0 0 60px #e200e6, 0 0 70px #e600ca;
+}
+  
+  100% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
 
 div {
-    height: 100vh;
+    height: 90vh;
 }
