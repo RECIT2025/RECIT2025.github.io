@@ -2,6 +2,10 @@
 padding: 0;
 margin: 0;
  }
+:root {
+    margin: 0;
+    padding: 0;
+}
 
 @font-face {
     font-family: 'peoplebook';
@@ -40,18 +44,21 @@ nav {
 body {
   font-family: "monospace" ;
   background-image: url("../static/endless-constellation.png");
+  background-attachment: fixed;
 }
-
 
 a {
     color: #8839ef;
 }
 
 a:hover {
-    color: #aaf;
-    animation: glowing-text 1s infinite alternate;
-    -webkit-animation: glowing-text 1s  infinite alternate;
-    -moz-animation: glowing-text 1s infinite alternate;
+  color: #faf;
+  transform: scale(1.25, 1.5);
+  transition-timing-function: ease-out;
+  transition-duration: 250ms;
+  animation: glowing-text 1s ease-in-out infinite alternate;
+  -webkit-animation: glowing-text 1s ease-in-out infinite alternate;
+  -moz-animation: glowing-text 1s ease-in-out infinite alternate;
 }
 
 .banner-container {
@@ -117,15 +124,11 @@ h2 {
 @-webkit-keyframes glowing-text {
   0% {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2e00e6, 0 0 40px #6300e6, 0 0 50px #c300e6, 0 0 60px #e200e6, 0 0 70px #e600ca;
-    color: white;
-    margin-top: 0px;
 }
   100% {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    margin-top: 50px;
   }
 }
-
 
 .page {
     height: 100vh;
