@@ -109,9 +109,9 @@ h2 {
 .glowing-text {
   font-size: 80px;
   color: #fff;
+  animation: glowing-text 1s ease-in-out infinite alternate;
   -webkit-animation: glowing-text 1s ease-in-out infinite alternate;
   -moz-animation: glowing-text 1s ease-in-out infinite alternate;
-  animation: glowing-text 1s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glowing-text {
