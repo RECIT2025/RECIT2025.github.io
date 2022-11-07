@@ -82,9 +82,6 @@ span.c{
 h1 {
     color: #ffafaf;
     font-size: 4rem;
-    padding: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
 }
 
 main {
@@ -120,10 +117,12 @@ h2 {
 @-webkit-keyframes glowing-text {
   0% {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2e00e6, 0 0 40px #6300e6, 0 0 50px #c300e6, 0 0 60px #e200e6, 0 0 70px #e600ca;
+    color: white;
+    margin-top: 0px;
 }
-  
   100% {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    margin-top: 50px;
   }
 }
 
