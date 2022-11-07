@@ -2,10 +2,6 @@
 padding: 0;
 margin: 0;
  }
-:root {
-    margin: 0;
-    padding: 0;
-}
 
 @font-face {
     font-family: 'peoplebook';
@@ -42,8 +38,7 @@ nav {
 
 body {
   font-family: "monospace" ;
-  background-image: url("../static/endless-constellation.png");
-  background-attachment: fixed;
+  background-color: #1d2021;
 }
 
 a {
@@ -58,6 +53,11 @@ a:hover {
   animation: glowing-text 1s ease-in-out infinite alternate;
   -webkit-animation: glowing-text 1s ease-in-out infinite alternate;
   -moz-animation: glowing-text 1s ease-in-out infinite alternate;
+}
+a:hover img {
+transform: scale(1.12);
+transition-timing-function: ease-in-out;
+transition-duration: 250ms;
 }
 
 .banner-container {
@@ -94,8 +94,6 @@ main {
     font-family: 'gameover';
     color: #ccd0da;
     font-size: 2rem;
-    margin: 2vw;
-    padding: 2vw;
 }
 
 main p,li{
@@ -133,4 +131,47 @@ h2 {
 
 .page {
     height: 100vh;
+    width: 100vw;
+}
+.banner-container {
+    background-image: url("../static/sprinkle.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#description{
+    background-image: url("../static/endless-constellation.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#instructions{
+    background-image: url('../static/black-waves.svg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact{
+    background-image: url('../static/');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#register{
+    background-image: url('../static/dust_texture.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chennai {
+    background-image: url('../static/street-of-chennai.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
